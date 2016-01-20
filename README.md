@@ -2,28 +2,36 @@
 Innovision'16 Website
 
 Built on Django 1.9.1
-Dependencies:
-    requests-oauthlib:
-        Github:
-            https://github.com/requests/requests-oauthlib
-        Install:
-            pip install requests requests_oauthlib
 
-    python-social-auth:
-        Github:
-            https://github.com/omab/python-social-auth
-        Install:
-            pip install python-social-auth
-        Docs:
-            http://python-social-auth.readthedocs.org/en/latest/index.html
+##Dependencies:
 
-    Python and MySQL dev headers and libraries for mysqlclient:
-        sudo apt-get install python-dev libmysqlclient-dev
+* ###requests-oauthlib:
 
-    mysqlclient:
-        Github:
-            https://github.com/PyMySQL/mysqlclient-python
-        Install:
-            pip install mysqlclient
-Database: MySQL
-    Setup a
+####Install:
+    `pip install requests requests_oauthlib`
+####[Github](https://github.com/requests/requests-oauthlib)
+
+* ###python-social-auth:
+
+####Install:
+    `pip install python-social-auth`
+####[Github](https://github.com/omab/python-social-auth)
+####[Docs](http://python-social-auth.readthedocs.org/en/latest/index.html)
+
+
+* ###mysqlclient:
+####Python and MySQL dev headers and libraries for mysqlclient:
+    `sudo apt-get install python-dev libmysqlclient-dev`
+####[Github](https://github.com/PyMySQL/mysqlclient-python)
+####Install:
+    `pip install mysqlclient`
+
+###Database: MySQL
+Setup a databse with name `**innovision**`
+     `CREATE DATABASE innovision CHARACTER SET UTF8;`
+And a user `**inno**` with password `innovision`
+    ```
+    CREATE USER inno@localhost IDENTIFIED BY 'innovision';
+    GRANT ALL PRIVILEGES ON innovision.* TO inno@localhost;
+    FLUSH PRIVILEGES;
+    ```
