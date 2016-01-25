@@ -31,11 +31,11 @@ Built on Django 1.9.1
 
 Setup a databse with name **innovision**
 
-    CREATE DATABASE innovision CHARACTER SET UTF8;
+    mysql> CREATE DATABASE innovision CHARACTER SET UTF8;
 
 And a user **inno** with password **innovision**
 
 
-    CREATE USER inno@localhost IDENTIFIED BY 'innovision';
-    GRANT ALL PRIVILEGES ON innovision.* TO inno@localhost;
-    FLUSH PRIVILEGES;
+    mysql> CREATE USER inno@localhost IDENTIFIED BY 'innovision';
+    mysql> GRANT ALL PRIVILEGES ON innovision.* TO inno@localhost;
+    mysql> FLUSH PRIVILEGES;
