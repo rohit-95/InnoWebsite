@@ -27,12 +27,12 @@ Built on Django 1.9.1
 #### Install:
     pip install mysqlclient
 
-### 4. materialize:
+### 4. django-material:
 
-[Github](https://github.com/edvm/django-materialize-css)
-[Docs](materializecss.com)
+[Github](https://github.com/viewflow/django-material)
+[Docs](http://forms.viewflow.io/)
 #### Install:
-    pip install django-materialize-css
+    pip install django-material
 
 ## Database: MySQL
 
