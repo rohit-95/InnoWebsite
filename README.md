@@ -27,6 +27,13 @@ Built on Django 1.9.1
 #### Install:
     pip install mysqlclient
 
+### 4. materialize:
+
+[Github](https://github.com/edvm/django-materialize-css)
+[Docs](materializecss.com)
+#### Install:
+    pip install django-materialize-css
+
 ## Database: MySQL
 
 Setup a databse with name **innovision**
