@@ -1,5 +1,16 @@
-from django.http import HttpResponse
+from django.shortcuts import render, render_to_response
+from django.views.generic import TemplateView
+from django.template.context import RequestContext
 
 
-def index(request):
-    return HttpResponse("Hello, world. You're at the login index.")
+class login(TemplateView):
+    template = 'login.html'
+
+    def get(self, request):
+        context = RequestContext(
+            request, {
+                'request': request,
+                'user': request.user,
+            }
+        )
+        return render_to_response(self.template, context_instance=context)
